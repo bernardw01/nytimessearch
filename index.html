@@ -26,7 +26,52 @@
 
 <div class="container">
 
-
+    <div class = "row">
+        <div class=col-md-9>
+            <div class="jumbotron text-center">
+                <h1><span class="glyphicons glyphicons-newspaper"></span>New York Times Search</h1>
+            </div>
+        </div>
+    </div>
+    <div class = "row">
+        <div class= col-md-9>
+        <div class="panel panel-default">
+            <div class="panel-heading">Search Parameters</div>
+            <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Search Term</label>
+                <input type="email" class="form-control" id="search-term">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Number of Records to Retrieve</label>
+                <input type="password" class="form-control" id="number-limit">
+              </div>
+              <div class="form-group">
+                <label for="start year">Start Year (Optional)</label>
+                <input type="number" class="form-control" id="start-year">
+              </div>
+              <div class="form-group">
+                <label for="end year">End Year (Optional)</label>
+                <input type="number" class="form-control" id="end-year">
+              </div>
+              <button type="submit" class="btn btn-default" id="search">Search</button>
+              <button type="submit" class="btn btn-default" id="clear">Clear Results</button>
+            </form>
+            </div>
+        </div>
+        </div>
+   </div> 
+    <div class=row>
+        <div class = col-md-9>
+            <div class="panel panel-default">
+                 <div class="panel-heading">Top Article</div>
+                    <div class="panel-body">
+                        <div id= aricleDisplay></div>
+                    </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
 
