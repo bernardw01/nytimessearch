@@ -6,6 +6,7 @@ var articles = [];
 $(document).ready(function () {
 
 
+
     function search(searchTerm, limit, startYear, endYear) {
         if (!startYear) {
             startYear = 2017;
